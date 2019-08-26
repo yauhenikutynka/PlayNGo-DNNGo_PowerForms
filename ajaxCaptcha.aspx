@@ -1,0 +1,1 @@
+﻿<%@ Page Language="C#" AutoEventWireup="True" CodeBehind="ajaxCaptcha.aspx.cs" Inherits="DNNGo.Modules.PowerForms.ajaxCaptcha" %>

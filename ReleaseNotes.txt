@@ -1,0 +1,244 @@
+﻿<div class="features">
+	<div class="feature_version">Feature 7.0.0</div>
+	<ul class="feature_list">
+		<li>Added a drop down control for "Country", whose data is from DNN Lists page.</li>
+		<li>Added a drop down control for "Region", whose data is from DNN Lists page. Also, it can be associated with drop down control for "Country".</li>
+		<li>Added "Equals Control" feature, for example, it can verify that two text boxes must have the same content.</li>
+		<li>Added "reCAPTCHA", refusing robots to submit spam form information.</li>
+		<li>Removed the original image verification.</li>
+		<li>Added a switch to determine if an email shows fields.</li>
+		<li>Added a "Multiple File Upload" control, making multiple-file-loading quite convenient.</li>
+		<li>Added a “Hide IP Address”switch to determine if the module’s full IP address will be stored.</li>
+		<li>Fixed the module’s several bugs and optimized how it is operated.</li>
+	</ul>
+</div>
+
+
+
+<div class="features">
+	<div class="feature_version">Feature 6.2.0</div>
+	<ul class="feature_list">
+		<li>Added the compression feature for reference resource at display interface. After enabling, it will not only reduce the reference times for JS and CSS files, but will also compress the file size.</li>
+		<li>Added version 2 google recaptcha. It will block spam info effectively after enabling it.</li>
+		<li>Removed the original image recaptcha.</li>
+		<li>Changed all the form effects, and optimized appearance of the page after google recaptcha is enabled.</li>
+		<li>Changed some JS and CSS, and optimized the compatibility after resource compression is enabled.</li>
+	</ul>
+</div>
+<div class="features">
+	<div class="feature_version">Feature 6.0.0</div>
+	<ul class="feature_list">
+		<li>Added the multi-language support for date control.</li>
+		<li>Added the feature of hiding IP address, you can enable it in settings.</li>
+		<li>Added the role name Token in email template.</li>
+		<li>Added the confirmation support for control input, for example, values of the two text boxes must be the same.</li>
+		<li>Optimized the effects of several forms.</li>
+	</ul>
+</div>
+
+<div class="features">
+	<div class="feature_version">Feature 5.9.0</div>
+	<ul class="feature_list">
+		<li>Added the feature of clearing the submission histroy records regularly.</li>
+		<li>Added the button of clearing all submission histroy records.</li>
+		<li>Added the ReplyTo feature in email sent by the submission users.</li>
+		<li>Compatible with more circumstance of email-sending.</li>
+	</ul>
+</div>
+
+
+
+
+<div class="features">
+	<div class="feature_version">Feature 5.8.0</div>
+	<ul class="feature_list">
+		<li>Fixed some bugs that DNN is not able to store parameter settings due to some long parameter names.</li>
+		<li>Added and deleted some part of effects, which will not affect the previous version.</li>
+		<li>Optimized CAPTCHA filed by adding label and prompts.</li>
+		<li>Optimized fields by increasing the length, allowing to place multiple fields in one line at the same time.</li>
+		<li>Optimized the loading speed and stability of the module.</li>
+	</ul>
+</div>
+
+
+
+<div class="features">
+	<div class="feature_version">Feature 5.5.0</div>
+	<ul class="feature_list">
+		<li>Newly added several export formats of historical records, such as csv,doc,html,xml,txt.</li>
+		<li>Fixed the bug of  mail content being blank at  some certain circumstances.</li>
+		<li>Fixed the bug of field order being disloated  at  some certain circumstances.</li>
+	</ul>
+</div>
+
+
+
+
+
+<div class="features">
+<div class="feature_version">Feature 5.4.0</div>
+<ul class="feature_list">
+    <li>Newly added Excel feature of historical exports, replacing original csv export format.</li>
+    <li>Modified some form effects to make it responsive.</li>
+    <li> Fixed the bug of some date format causing module errors.</li>
+    <li>Optimized the functioning efficiency of some features.</li>
+    
+</ul>
+</div>
+
+
+  <div class="features">
+<div class="feature_version">Feature 5.1.0</div>
+<ul class="feature_list">
+    <li>Added dynamic option controls(color selector. urls selector and icon selector)</li>
+    <li>Optimized display way of dynamic option controls, making UI more beautiful.</li>
+    <li>Added permission setting feature for custom fields.</li>
+    <li>Added start and end time limitation feature of custom fields.</li>
+    <li>Added media library feature, making it easy to select uploaded images and files with urls selector.</li>
+    <li>Added option for each effect, making setting features of each effect more powerful.</li>
+    <li>Fixed the issue of some settings losing because of copying module and other pages under some DNN versions.</li>
+    <li>Fixed the issue of not successfully obtaining table prefix names through DNN API in some special case.</li>
+    <li>Fixed the issue of unrecognizable date because of authorization obtaining in some certain date formats.</li>
+    <li>Unlocked the limitation of non-admin permission being able to see just a few pages.</li>
+    <li>Removed permission setting function in module General Settings page, and got it to manage all in settings that come with the module.</li>
+</ul>
+</div>
+
+ <div class="features">
+<div class="feature_version">Feature 5.0.0</div>
+<ul class="feature_list">
+    <li>Newly added feature: Sender of admin reminder email could be submit user.</li>
+    <li>Added the option of whether to display reset button or not.</li>
+    <li>Fixed the bug of module license error at some circumstances.</li>
+    <li>Fixed the bug of some date format causing module error.</li>
+    <li>Fixed the bug of management list header being not able to sort.</li>
+    <li>Added multi-language(30+) support for verification prompt.</li>
+</ul>
+</div>
+
+
+
+<div class="features">
+<div class="feature_version">Feature 4.5.0</div>
+<ul class="feature_list">
+    <li>Fixed the BUG of reset button being not able to reset the validation prompt.</li>
+    <li>Changed the default settings of email sending to enable sending email.</li>
+    <li>Changed the default admin email of the email sending.</li>
+</ul>
+</div>
+
+
+
+
+<div class="features">
+<div class="feature_version">Feature 4.2.0</div>
+<ul class="feature_list">
+    <li>Added the feature of exporting  records regularly and sending to designated email.</li>
+    <li>Fixed the bug that some emails can not be sent successfully at some circumstances.</li>
+</ul>
+</div>
+
+<div class="features">
+<div class="feature_version">Feature 4.1.0</div>
+<ul class="feature_list">
+    <li>Changed the Effect_04_FancyBox to be displayed in iFrame form.</li>
+    <li>Changed the Effect_05_HoverFancyBox to be displayed in iFrame form.</li>
+    <li>Changed the Effect_08_ExternalFancyBox to be displayed in iFrame form.</li>
+    <li>Newly added HTML control,you can display custom contents through this control.</li>
+    <li>Fixed the issue that the type of some data fields being unreasonable.</li>
+</ul>
+</div>
+
+<div class="features">
+<div class="feature_version">Feature 4.0.0</div>
+<ul class="feature_list">
+    <li>Re-designed the framework of data management interface, independent of DNN framework and has a faster running speed.</li>
+    <li>Support responsiveness fully, support various mobile devices in different resolutions.</li>
+    <li>Nice and elegant interface, make you feel like working with wordpress.</li>
+    <li>Fixed many BUGs under V3.0 below, with more stability.</li>
+</ul>
+</div>
+<div class="features">
+<div class="feature_version">Feature 3.1.0</div>
+<ul class="feature_list">
+    <li>Added the feature of obtaining Tracking Info when submitting, which will display in the submitted history and email notification.</li>
+    <li>Optimized the template of notification email.</li>
+</ul>
+</div>
+<div class="features">
+<div class="feature_version">Feature 3.0.0</div>
+<ul class="feature_list">
+    <li>Added the push data feature, which allows you to submit form data to custom pages. Optimized the option of pushing data setting interface with rich custom options.</li>
+    <li>Added the feature to export all submitted history records at one time.</li>
+</ul>
+</div>
+<div class="features">
+<div class="feature_version">Feature 2.7.3</div>
+<ul class="feature_list">
+    <li>Added Hidden Field form validation to avoid machine submission and repeated submission.</li>
+</ul>
+</div>
+<div class="features">
+<div class="feature_version">Feature 2.6.3</div>
+<ul class="feature_list">
+    <li>Added two sets of form page templates.</li>
+    <li>Added two sets of result page templates.</li>
+    <li>Optimized the paramter setting options of the template.</li>
+</ul>
+</div>
+<div class="features">
+<div class="feature_version">Feature 2.2.1</div>
+<ul class="feature_list">
+    <li>Optimized the way the form effects display, divided the result page and submission page to choose from.</li>
+    <li>Added the ability for the non-admin roles to check the history submissions.</li>
+    <li>Added the submission success effects-submission result details and submission result list.</li>
+</ul>
+</div>
+<div class="features">
+<div class="feature_version">Feature 1.1.5</div>
+<ul class="feature_list">
+    <li>Added Hover Fancy Box effect.</li>
+</ul>
+</div>
+<div class="features">
+<div class="feature_version">Feature 1.1.4</div>
+<ul class="feature_list">
+    <li>Added FancyBox effect.</li>
+</ul>
+</div>
+<div class="features">
+<div class="feature_version">Feature 1.1.1</div>
+<ul class="feature_list">
+    <li>Added collapsable effect.</li>
+    <li>Support the temporary storage of the un-submitted form at the input state of form, and avoided the data loss when page closed.</li>
+    <li>Added verification functionality to set the parameter of the verification code.</li>
+    <li>Optimized the verification mode and verification speed.</li>
+</ul>
+</div>
+<div class="features">
+<div class="feature_version">Feature 1.1.0</div>
+<ul class="feature_list">
+    <li>Added new functionality to back up the custom filed, support import/export for the custom filed.</li>
+    <li>Added new functionality to export user's submission.</li>
+    <li>Optimized the display of form groups.</li>
+</ul>
+</div>
+<div class="features">
+<div class="feature_version">Feature 1.0.6</div>
+<ul class="feature_list">
+    <li>Added the TextBox control to display the logged-in user's name.</li>
+    <li>Added the TextBox control to display the logged-in user's mail address.</li>
+    <li>Added the DropDownList control to display the country.</li>
+    <li>Increased three fileds to the module after the optimization of the module installation,which enables it a simple contact us module.</li>
+    <li>Displayed the unfriendly issue after the optimization of packet switch.</li>
+</ul>
+</div>
+<div class="features">
+<div class="feature_version">Feature 1.0.0</div>
+<ul class="feature_list">
+    <li>Completed the frame construction of PowerForms module, created xml+template scheme to achieve each effect.</li>
+    <li>Support jQuery validationEngine, support multiple forms to be installed on one page.</li>
+    <li>Completed effect setting and effect display interface, developed a stable version.</li>
+    <li>Completed 2 form effects ( basic and grouped ).</li>
+</ul>
+</div>

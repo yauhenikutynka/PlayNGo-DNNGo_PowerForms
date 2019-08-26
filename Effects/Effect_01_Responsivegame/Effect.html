@@ -1,0 +1,116 @@
+﻿<div class="$ThemeName" id="form_div_${ModuleID}" style="width:${xf.ViewXmlSetting("width","100%")};">
+#if(${DisplayForm})
+ 
+    #if($FieldList.Count > 0)
+        <ul class="form_list">
+            #foreach($FieldItem in $FieldList)
+                <li style="width:${xf.ViewItemSetting($FieldItem,"Itemwidth","100")}%">
+                    #if(${xf.IsHtmlControl($FieldItem)})
+                        <div class="form_row"> ${xf.ViewControl($FieldItem)}</div>
+                    #else
+                    <div class="form_row row${velocityCount}">
+                        #if(${xf.ViewItemSetting($FieldItem,"DisplayTitle","true")}=="true")
+                            <div class="form_label">
+                                ${xf.ViewLable($FieldItem,"")} #if($FieldItem.Required == 1)<span class="form_required">*</span>#end 
+                            </div>
+                        #end   
+                        <div class="form_input">
+                            ${xf.ViewControl($FieldItem)}
+                            #if( ${xf.ViewXmlSetting("DisplayTooltip","true")} == "true")
+                                ${xf.ViewInputDefault($FieldItem)}
+                            #end
+                        </div>
+                    </div>
+                    #end
+                </li>
+            #end
+            #if($Module.Settings_Recaptcha_Enable)
+            <li style="width:100%;">
+                <div class="form_row">
+                    <div class="form_captcha">${xf.ViewCaptcha()}</div>
+                </div>           
+            </li>
+            #end
+        </ul>			
+    #end
+    #if($ErrorMessage != '')
+        <div class="PowerForms_ErrorMessage">$ErrorMessage</div>  
+    #end
+    <div class="form_submit"> 
+        ${xf.ViewButton("submit_but")} 
+        #if(${xf.ViewXmlSetting("ShowResetButton","true")} == "true")
+            ${xf.ViewResetButton("reset_but")}
+        #end
+    </div>
+        #else
+            #if(${Module.UserId} > 0)
+                <div>${xf.ViewSetting("PowerForms_PromptAlreadySubmitted","You have already submitted the form.")}</div>
+            #else
+               <div>${xf.ViewSetting("PowerForms_PromptNotLogged","You need to log in to submit forms.")}</div>
+            #end
+
+        #end  
+    
+    
+</div>
+<style type="text/css">
+	#form_div_${ModuleID} .actionMenu{ display:none;}
+	#form_div_${ModuleID} .form_row {
+	  padding: 0px 0px ${xf.ViewXmlSetting("VerticalSpacing","10")}px ${xf.ViewXmlSetting("HorizontalSpacing","10")}px;
+	}
+	#form_div_${ModuleID} .form_list{
+		margin:0 0 0 -${xf.ViewXmlSetting("HorizontalSpacing","10")}px
+	}
+	.form_captcha{
+		position:relative;
+	}
+	.g-recaptcha-dnn{
+		padding-bottom:20px;
+	}
+	.form_captcha .g-recaptcha-msg{
+		position:absolute;
+		left:0;
+		bottom:0;
+		font-size:13px;
+		font-family:Arial, Helvetica, sans-serif;
+		white-space:nowrap;
+		line-height:1;
+	}
+</style> 
+
+
+<script type="text/javascript">
+    jQuery(document).ready(function () {
+        $(".form_list .form_row .form_input").each(function() {
+        var tInput = $(this).find("input");
+        var tTitle = $('<label></label><span class="line"></span>');
+        var sthis = $(this);
+      // $(this).append(tInput.attr("title"));
+      sthis.append(tTitle);
+       sthis.find("label").append(tInput.attr("title"));
+       sthis.find("label").append($(this).find("textarea").attr("title"));
+       sthis.find("input").attr("placeholder","");
+       sthis.find("textarea").attr("placeholder","");
+          
+       
+      var Inputval = $(this).find("input,textarea");  
+          
+       
+           
+         if(Inputval.val()!==""){
+            Inputval.addClass("has-val")
+          }
+         
+          Inputval.on("change",function(){
+            
+            if($(this).val()!==""){
+              $(this).addClass("has-val")
+            }else{
+              $(this).removeClass("has-val")
+            }
+          })
+          
+          
+    });
+    })
+ </script>

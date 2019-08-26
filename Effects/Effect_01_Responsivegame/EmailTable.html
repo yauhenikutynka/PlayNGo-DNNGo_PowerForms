@@ -1,0 +1,60 @@
+﻿<table cellspacing="5" cellpadding="5" border="0" >
+    <tbody>
+        <tr>
+            <th  width="150"  align="left" style="white-space:nowrap;">
+                Name
+            </th>
+            #if($Group)
+            <th  width="150"  align="left" style="white-space:nowrap;">
+                Group
+            </th>
+            #end
+            <th scope="col"  align="left">
+                Content
+            </th>
+        </tr>
+        #if($ContentList.Count > 0)
+            #foreach($ContentItem in $ContentList)
+               #set($FieldItem = $xf.FindFieldItem($FieldList,$ContentItem.FieldName))
+       
+
+                #if(${xf.ViewItemSetting($FieldItem,"MailTemplateDisplay","true")} == "true")
+                    #if($ContentItem.Extra == false)
+                        <tr class="td_row">
+                            <td  align="left" style="white-space:nowrap;">
+                                $ContentItem.FieldAlias
+                            </td>
+                             #if($Group)
+                            <td  align="left" style="white-space:nowrap;">
+                                $ContentItem.Group
+                            </td>
+                             #end
+                            <td  align="left">
+                               ${xf.ViewContentValue($ContentItem)}
+                            </td>
+                        </tr>
+                    #end
+                #end
+           #end
+
+        #else
+             <tr align="left">
+                <td  colspan="3">
+                   No data in the list.
+                </td>
+            </tr>
+        #end
+    </tbody>
+</table>
+
+
+#if($ContentList.Count > 0 && $ExtraTracking )
+    -- Tracking Info -- <br />
+    #foreach($ContentItem in $ContentList)
+        #if($ContentItem.Extra)
+            $ContentItem.FieldAlias : ${xf.ViewContentValue($ContentItem)} <br />
+        #end
+    #end
+#else
+    From Page Url: ${FormUrl}
+#end

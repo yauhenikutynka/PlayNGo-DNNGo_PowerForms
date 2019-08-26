@@ -1,0 +1,192 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<DNNGo_PowerForms>
+  <EffectSettings>
+    <Setting>
+      <Name><![CDATA[ width ]]></Name>
+      <Alias><![CDATA[ Form Width]]></Alias>
+      <DefaultValue><![CDATA[ 100% ]]></DefaultValue>
+      <Width><![CDATA[80]]></Width>
+      <Rows><![CDATA[1]]></Rows>
+      <ControlType><![CDATA[ text ]]></ControlType>
+      <ListContent><![CDATA[  ]]></ListContent>
+      <Description><![CDATA[ px or % ]]></Description>
+      <Required><![CDATA[ true ]]></Required>
+    </Setting>
+	
+     <Setting>
+      <Name><![CDATA[HorizontalSpacing]]></Name>
+      <Alias><![CDATA[Item Horizontal Spacing]]></Alias>
+      <Width><![CDATA[80]]></Width>
+      <Rows><![CDATA[1]]></Rows>
+      <DefaultValue><![CDATA[10]]></DefaultValue>
+      <ControlType><![CDATA[TextBox]]></ControlType>
+      <Direction><![CDATA[Vertical]]></Direction>
+      <ListContent><![CDATA[]]></ListContent>
+      <Description><![CDATA[px]]></Description>
+      <Required><![CDATA[True]]></Required>
+      <Verification><![CDATA[integer]]></Verification>
+    </Setting>
+     <Setting>
+      <Name><![CDATA[VerticalSpacing]]></Name>
+      <Alias><![CDATA[Item Vertical Spacing]]></Alias>
+      <Width><![CDATA[80]]></Width>
+      <Rows><![CDATA[1]]></Rows>
+      <DefaultValue><![CDATA[10]]></DefaultValue>
+      <ControlType><![CDATA[TextBox]]></ControlType>
+      <Direction><![CDATA[Vertical]]></Direction>
+      <ListContent><![CDATA[]]></ListContent>
+      <Description><![CDATA[px]]></Description>
+      <Required><![CDATA[True]]></Required>
+      <Verification><![CDATA[integer]]></Verification>
+    </Setting>
+	
+	
+	
+    <Setting>
+      <Name>
+        <![CDATA[ promptPosition ]]>
+      </Name>
+      <Alias>
+        <![CDATA[ Prompt Position]]>
+      </Alias>
+      <DefaultValue>
+        <![CDATA[ topRight ]]>
+      </DefaultValue>
+      <Width>
+        <![CDATA[120]]>
+      </Width>
+      <Rows>
+        <![CDATA[1]]>
+      </Rows>
+      <ControlType>
+        <![CDATA[ DropDownList ]]>
+      </ControlType>
+      <ListContent>
+        <![CDATA[ topRight,topLeft,centerRight,centerLeft,bottomLeft,bottomRight ]]>
+      </ListContent>
+      <Description>
+        <![CDATA[  ]]>
+      </Description>
+      <Required>
+        <![CDATA[ true ]]>
+      </Required>
+      <Verification>
+        <![CDATA[  ]]>
+      </Verification>
+    </Setting> 
+     
+    
+    <Setting>
+      <Name><![CDATA[DisplayTooltip]]></Name>
+      <Alias><![CDATA[Display Tooltip]]></Alias>
+      <Width><![CDATA[100]]></Width>
+      <Rows><![CDATA[1]]></Rows>
+      <DefaultValue><![CDATA[true]]></DefaultValue>
+      <ControlType><![CDATA[CheckBox]]></ControlType>
+      <Direction><![CDATA[Vertical]]></Direction>
+      <ListContent><![CDATA[]]></ListContent>
+      <Description><![CDATA[]]></Description>
+      <Required><![CDATA[False]]></Required>
+      <Verification><![CDATA[]]></Verification>
+    </Setting>
+
+    <Setting>
+      <Name><![CDATA[SubmitButtonText]]></Name>
+      <Alias><![CDATA[Submit Button Text]]></Alias>
+      <Width><![CDATA[100]]></Width>
+      <Rows><![CDATA[1]]></Rows>
+      <DefaultValue><![CDATA[Submit]]></DefaultValue>
+      <ControlType><![CDATA[TextBox]]></ControlType>
+      <Direction><![CDATA[Vertical]]></Direction>
+      <ListContent><![CDATA[]]></ListContent>
+      <Description><![CDATA[]]></Description>
+      <Required><![CDATA[True]]></Required>
+      <Verification><![CDATA[]]></Verification>
+    </Setting>
+    <Setting>
+      <Name><![CDATA[ResetButtonText]]></Name>
+      <Alias><![CDATA[Reset Button Text]]></Alias>
+      <Width><![CDATA[100]]></Width>
+      <Rows><![CDATA[1]]></Rows>
+      <DefaultValue><![CDATA[Reset]]></DefaultValue>
+      <ControlType><![CDATA[TextBox]]></ControlType>
+      <Direction><![CDATA[Vertical]]></Direction>
+      <ListContent><![CDATA[]]></ListContent>
+      <Description><![CDATA[]]></Description>
+      <Required><![CDATA[True]]></Required>
+      <Verification><![CDATA[]]></Verification>
+    </Setting>
+    <Setting>
+      <Name><![CDATA[SubmitButtonImage]]></Name>
+      <Alias><![CDATA[Submit Button Image]]></Alias>
+      <Width><![CDATA[300]]></Width>
+      <Rows><![CDATA[1]]></Rows>
+      <DefaultValue><![CDATA[]]></DefaultValue>
+      <ControlType><![CDATA[Urls]]></ControlType>
+      <Direction><![CDATA[Vertical]]></Direction>
+      <ListContent><![CDATA[U,F]]></ListContent>
+      <Description><![CDATA[E.g. "http://www.dnngo.net/submit.png"]]></Description>
+      <Required><![CDATA[False]]></Required>
+      <Verification><![CDATA[url]]></Verification>
+    </Setting>
+    <Setting>
+      <Name><![CDATA[ResetButtonImage]]></Name>
+      <Alias><![CDATA[Reset Button Image]]></Alias>
+      <Width><![CDATA[300]]></Width>
+      <Rows><![CDATA[1]]></Rows>
+      <DefaultValue><![CDATA[]]></DefaultValue>
+      <ControlType><![CDATA[Urls]]></ControlType>
+      <Direction><![CDATA[Vertical]]></Direction>
+      <ListContent><![CDATA[U,F]]></ListContent>
+      <Description><![CDATA[E.g. "http://www.dnngo.net/reset.png"]]></Description>
+      <Required><![CDATA[False]]></Required>
+      <Verification><![CDATA[url]]></Verification>
+    </Setting>
+     <Setting>
+      <Name><![CDATA[buttonwidth]]></Name>
+      <Alias><![CDATA[Button Image Width]]></Alias>
+      <Width><![CDATA[80]]></Width>
+      <Rows><![CDATA[1]]></Rows>
+      <DefaultValue><![CDATA[78]]></DefaultValue>
+      <ControlType><![CDATA[TextBox]]></ControlType>
+      <Direction><![CDATA[Vertical]]></Direction>
+      <ListContent><![CDATA[]]></ListContent>
+      <Description><![CDATA[px]]></Description>
+      <Required><![CDATA[True]]></Required>
+      <Verification><![CDATA[integer]]></Verification>
+    </Setting>
+    <Setting>
+      <Name><![CDATA[buttonheight]]></Name>
+      <Alias><![CDATA[Button Image Height]]></Alias>
+      <Width><![CDATA[80]]></Width>
+      <Rows><![CDATA[1]]></Rows>
+      <DefaultValue><![CDATA[32]]></DefaultValue>
+      <ControlType><![CDATA[TextBox]]></ControlType>
+      <Direction><![CDATA[Vertical]]></Direction>
+      <ListContent><![CDATA[]]></ListContent>
+      <Description><![CDATA[px]]></Description>
+      <Required><![CDATA[True]]></Required>
+      <Verification><![CDATA[integer]]></Verification>
+    </Setting>
+	  <Setting>
+		  <Name><![CDATA[ShowResetButton]]></Name>
+		  <Alias><![CDATA[Display Reset Button]]></Alias>
+		  <Width><![CDATA[100]]></Width>
+		  <Rows><![CDATA[1]]></Rows>
+		  <DefaultValue><![CDATA[true]]></DefaultValue>
+		  <ControlType><![CDATA[CheckBox]]></ControlType>
+		  <Direction><![CDATA[Vertical]]></Direction>
+		  <ListContent><![CDATA[]]></ListContent>
+		  <Description><![CDATA[]]></Description>
+		  <Required><![CDATA[False]]></Required>
+		  <Verification><![CDATA[]]></Verification>
+		  <Group><![CDATA[]]></Group>
+		  <Categories><![CDATA[]]></Categories>
+		  <Layout><![CDATA[]]></Layout>
+	  </Setting>
+    
+  </EffectSettings>
+</DNNGo_PowerForms>
+
+
+

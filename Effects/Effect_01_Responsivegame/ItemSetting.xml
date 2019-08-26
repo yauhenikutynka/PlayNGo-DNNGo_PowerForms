@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<DNNGo_PowerForms>
+	<EffectSettings>
+     <Setting>
+      <Name><![CDATA[Itemwidth]]></Name>
+      <Alias><![CDATA[Item Width]]></Alias>
+      <Width><![CDATA[80]]></Width>
+      <Rows><![CDATA[1]]></Rows>
+      <DefaultValue><![CDATA[100]]></DefaultValue>
+      <ControlType><![CDATA[TextBox]]></ControlType>
+      <Direction><![CDATA[Vertical]]></Direction>
+      <ListContent><![CDATA[]]></ListContent>
+      <Description><![CDATA[%]]></Description>
+      <Required><![CDATA[True]]></Required>
+      <Verification><![CDATA[integer]]></Verification>
+	  <Group><![CDATA[Item Option]]></Group>
+	  <Categories><![CDATA[Item Option]]></Categories>
+	  <Layout><![CDATA[Left]]></Layout>
+    </Setting>
+    <Setting>
+      <Name><![CDATA[DisplayTitle]]></Name>
+      <Alias><![CDATA[Display Title]]></Alias>
+      <Width><![CDATA[100]]></Width>
+      <Rows><![CDATA[1]]></Rows>
+      <DefaultValue><![CDATA[true]]></DefaultValue>
+      <ControlType><![CDATA[CheckBox]]></ControlType>
+      <Direction><![CDATA[Vertical]]></Direction>
+      <ListContent><![CDATA[]]></ListContent>
+      <Description><![CDATA[]]></Description>
+      <Required><![CDATA[False]]></Required>
+      <Verification><![CDATA[]]></Verification>
+	  <Group><![CDATA[Item Option]]></Group>
+	  <Categories><![CDATA[Item Option]]></Categories>
+	  <Layout><![CDATA[Left]]></Layout>
+    </Setting>
+  </EffectSettings>
+</DNNGo_PowerForms>
+
+
+

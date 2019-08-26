@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<DNNGo_PowerForms>
+  <FieldList>
+    <FieldItem>
+      <Name><![CDATA[]]></Name>
+      <Alias><![CDATA[]]></Alias>
+      <ToolTip><![CDATA[]]></ToolTip>
+      <Description><![CDATA[]]></Description>
+      <DefaultValue><![CDATA[]]></DefaultValue>
+      <FieldType><![CDATA[]]></FieldType>
+      <Direction><![CDATA[]]></Direction>
+      <Width><![CDATA[]]></Width>
+      <Rows><![CDATA[]]></Rows>
+      <FiledList><![CDATA[]]></FiledList>
+      <Required><![CDATA[]]></Required>
+      <Verification><![CDATA[]]></Verification>
+      <Sort><![CDATA[]]></Sort>
+      <Status><![CDATA[]]></Status>
+      <Group><![CDATA[]]></Group>
+    </FieldItem>
+  </FieldList>
+</DNNGo_PowerForms>

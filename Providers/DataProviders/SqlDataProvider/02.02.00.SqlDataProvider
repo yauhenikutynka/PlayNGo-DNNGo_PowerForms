@@ -1,0 +1,38 @@
+﻿/************************************************************/
+/*****              SqlDataProvider                     *****/
+/*****                                                  *****/
+/*****                                                  *****/
+/***** Note: To manually execute this script you must   *****/
+/*****       perform a search and replace operation     *****/
+/*****       for {databaseOwner} and {objectQualifier}  *****/
+/*****                                                  *****/
+/************************************************************/
+
+/** ALTER Table **/
+
+ 
+/** DNNGo_PowerForms_Content  **/
+if not exists (select * from dbo.sysobjects where id = object_id(N'{databaseOwner}[{objectQualifier}DNNGo_PowerForms_Content]') and OBJECTPROPERTY(id, N'IsTable') = 1)
+BEGIN
+	ALTER TABLE {databaseOwner}[{objectQualifier}DNNGo_PowerForms_Content] ADD
+	PaymentStatus nvarchar(200) NULL,
+	PaymentTime datetime NULL,
+	PaymentLink nvarchar(500) NULL,
+	TransactionID nvarchar(500) NULL
+   
+END
+GO
+
+ 
+
+
+
+
+ 
+
+/************************************************************/
+/*****              SqlDataProvider                     *****/
+/************************************************************/
+
+
+

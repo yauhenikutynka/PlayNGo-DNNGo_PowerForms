@@ -1,0 +1,1 @@
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="ajaxValidate.aspx.cs" Inherits="DNNGo.Modules.PowerForms.ajaxValidate" %>

@@ -1,0 +1,198 @@
+.plupload_clearer {
+	clear:both;
+	height:0px;
+	display:block;
+	width:100%;
+	overflow:hidden;
+}
+.plupload_wrapper .plupload_container  ul{
+	margin:0;
+	padding:0;
+	width:100%;
+	display:table;
+}
+.plupload_wrapper .plupload_container  li{
+	display:table-row;
+	list-style:none;
+	width:100%!important;
+	margin:0;
+	padding:0;
+}
+.plupload_wrapper li > div{
+	display:table-cell;
+	padding:0px 8px ;
+	background-color:#F9F9F9;
+	border-bottom: 1px solid #DDD;
+	height:40px;
+	line-height:40px;
+	white-space:nowrap;
+}
+
+.plupload_wrapper .plupload_file_name {
+	width:85%;
+}
+.plupload_wrapper .plupload_file_status {
+	text-align:right;
+	width:5%;
+}
+.plupload_wrapper .plupload_file_size {
+	text-align:right;
+	width:5%;
+}
+.plupload_wrapper .plupload_file_action{
+	text-align:center;
+	width:3%;
+}
+.plupload_wrapper .plupload_file_action .plupload_action_icon {
+	width:16px;
+	height:16px;
+	line-height:13px;
+	text-align:center;
+	border-radius:50%;
+	-moz-border-radius:50%;
+	-webkit-border-radius:50%;
+	background-color:#AB0000;
+	display:inline-block;
+	margin:auto;
+	vertical-align:middle;
+	cursor:pointer;
+	color:#FFF;
+	overflow:hidden;
+}
+.plupload_wrapper .plupload_file_action .plupload_action_icon:before {
+	content:"-";
+	font-size:20px;
+	font-family:Arial, Helvetica, sans-serif;
+}
+.plupload_wrapper .plupload_file_action .icon-circle-check {
+	background-color:#45750C;
+}
+.plupload_wrapper .plupload_filelist_footer {
+	width:100%;
+    background: #f5f6f7;
+    color: #42454A;
+}
+.plupload_wrapper .plupload_filelist_footer td{
+    padding: 8px 8px;
+}
+
+.plupload_wrapper .plupload_started {
+	width:20%;
+	font-size:12px;
+}
+.plupload_wrapper .plupload_file_status {
+	width:5%;
+	white-space:nowrap;
+	padding:0px 5px;
+}
+.plupload_wrapper .plupload_file_size {
+	width:5%;
+	white-space:nowrap;
+	padding:0px 5px;
+}
+.plupload_wrapper .plupload_button {
+	padding:4px 6px;
+	font-size:13px;
+	font-weight:normal;
+	border:1px solid #A9A9A9;
+	background-color:#FFF;
+	color:#333;
+	font-family:Arial, Helvetica, sans-serif;
+	border-radius:3px;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+	cursor:pointer;
+	display:inline-block;
+	transition: 		all ease-in 200ms;
+	-moz-transition: 	all ease-in 200ms; /* Firefox 4 */
+	-webkit-transition: all ease-in 200ms; /* Safari and Chrome */
+	-o-transition: 		all ease-in 200ms; /* Opera */
+	-ms-transition: 	all ease-in 200ms; /* IE9? */
+}
+.plupload_wrapper .plupload_button.ui-button-disabled{
+	opacity:0.5;	
+}
+.plupload_wrapper .plupload_button span{
+	padding:0;
+}
+.plupload_wrapper .plupload_button:hover{
+	font-size:13px;
+	font-weight:normal;
+	border:1px solid #333;
+	background-color:#f5f6f7;
+	color:#333;
+	font-family:Arial, Helvetica, sans-serif;
+} 
+.plupload_wrapper .plupload_progress_container  {
+    height: 10px !important;
+    overflow: hidden;
+    background-color: #eee;
+    -webkit-box-shadow:none	;
+    box-shadow:none;
+    text-align: left;
+	border:1px solid #e3e3e3;
+	border-radius:3px;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+}
+
+.plupload_wrapper .plupload_progress_container > div  {
+	margin: 0;
+	height: 100%;
+	background-color: #1a82f7;
+	border:none;
+	background: -moz-linear-gradient(left, #2b7fda 0%, #3fbdff 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, right top, color-stop(0%,#2b7fda), color-stop(100%,#3fbdff)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(left, #2b7fda 0%, #3fbdff 100%); /* Chrome10+,Safari5.1+ */
+	background: linear-gradient(left, #2b7fda 0%, #3fbdff 100%); /* W3C */
+}
+
+.plupload_wrapper .plupload_message {
+    border: 1px solid #cd0a0a;
+    color: #cd0a0a;
+	background-color:#FFF9F7;
+	padding:8px;
+	position:relative;
+	margin-bottom:1px;
+}
+.plupload_wrapper .plupload_message strong {
+    color: #cd0a0a;
+}
+.plupload_wrapper .plupload_message p{
+	margin:0;
+}
+.plupload_wrapper .plupload_message_close {
+	width:16px;
+	height:16px;
+	line-height:13px;
+	text-align:center;
+	border-radius:50%;
+	-moz-border-radius:50%;
+	-webkit-border-radius:50%;
+	background-color:#AB0000;
+	display:inline-block;
+	margin:auto;
+	vertical-align:middle;
+	cursor:pointer;
+	color:#FFF;
+	overflow:hidden;
+	position:absolute;
+	right:5px;
+	top:5px;
+	text-indent: 1px;
+}
+.plupload_wrapper .plupload_message_close:before {
+	content:"X";
+	font-size:10px;
+	font-family:Arial, Helvetica, sans-serif;
+}
+.plupload_wrapper .plupload_stop  {
+	display:none;
+}
+
+
+
+
+
+
+

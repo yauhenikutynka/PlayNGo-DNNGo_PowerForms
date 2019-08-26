@@ -1,0 +1,116 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<DNNGo_PowerForms>
+  <EffectSettings>
+    
+    <Setting>
+      <Name><![CDATA[resultitle]]></Name>
+      <Alias><![CDATA[Results of Title]]></Alias>
+      <Width><![CDATA[300]]></Width>
+      <Rows><![CDATA[1]]></Rows>
+      <DefaultValue><![CDATA[Email Sent Successfully.]]></DefaultValue>
+      <ControlType><![CDATA[TextBox]]></ControlType>
+      <Direction><![CDATA[Vertical]]></Direction>
+      <ListContent><![CDATA[]]></ListContent>
+      <Description><![CDATA[]]></Description>
+      <Required><![CDATA[True]]></Required>
+      <Verification><![CDATA[optional]]></Verification>
+      <Group><![CDATA[]]></Group>
+      <Categories><![CDATA[]]></Categories>
+    </Setting>
+    <Setting>
+      <Name>
+        <![CDATA[ resultcontent ]]>
+      </Name>
+      <Alias>
+        <![CDATA[ Results of content]]>
+      </Alias>
+      <DefaultValue>
+        <![CDATA[ Thank you, your message has been submitted to us. ]]>
+      </DefaultValue>
+      <Width>
+        <![CDATA[300]]>
+      </Width>
+      <Rows>
+        <![CDATA[6]]>
+      </Rows>
+      <ControlType>
+        <![CDATA[ RichTextBox ]]>
+      </ControlType>
+      <ListContent>
+        <![CDATA[  ]]>
+      </ListContent>
+      <Description>
+        <![CDATA[  ]]>
+      </Description>
+      <Required>
+        <![CDATA[ true ]]>
+      </Required>
+      <Verification>
+        <![CDATA[  ]]>
+      </Verification>
+    </Setting>
+
+    <Setting>
+      <Name><![CDATA[buttonwidth]]></Name>
+      <Alias><![CDATA[Button Width]]></Alias>
+      <Width><![CDATA[80]]></Width>
+      <Rows><![CDATA[1]]></Rows>
+      <DefaultValue><![CDATA[78]]></DefaultValue>
+      <ControlType><![CDATA[TextBox]]></ControlType>
+      <Direction><![CDATA[Vertical]]></Direction>
+      <ListContent><![CDATA[]]></ListContent>
+      <Description><![CDATA[px]]></Description>
+      <Required><![CDATA[True]]></Required>
+      <Verification><![CDATA[integer]]></Verification>
+    </Setting>
+    <Setting>
+      <Name><![CDATA[buttonheight]]></Name>
+      <Alias><![CDATA[Button Height]]></Alias>
+      <Width><![CDATA[80]]></Width>
+      <Rows><![CDATA[1]]></Rows>
+      <DefaultValue><![CDATA[32]]></DefaultValue>
+      <ControlType><![CDATA[TextBox]]></ControlType>
+      <Direction><![CDATA[Vertical]]></Direction>
+      <ListContent><![CDATA[]]></ListContent>
+      <Description><![CDATA[px]]></Description>
+      <Required><![CDATA[True]]></Required>
+      <Verification><![CDATA[integer]]></Verification>
+    </Setting>
+
+    <Setting>
+      <Name><![CDATA[ReturnButtonText]]></Name>
+      <Alias><![CDATA[Return Button Text]]></Alias>
+      <Width><![CDATA[100]]></Width>
+      <Rows><![CDATA[1]]></Rows>
+      <DefaultValue><![CDATA[Return]]></DefaultValue>
+      <ControlType><![CDATA[TextBox]]></ControlType>
+      <Direction><![CDATA[Vertical]]></Direction>
+      <ListContent><![CDATA[]]></ListContent>
+      <Description><![CDATA[]]></Description>
+      <Required><![CDATA[True]]></Required>
+      <Verification><![CDATA[]]></Verification>
+    </Setting>
+
+    <Setting>
+      <Name><![CDATA[ReturnButtonImage]]></Name>
+      <Alias><![CDATA[Return Button Image]]></Alias>
+      <Width><![CDATA[300]]></Width>
+      <Rows><![CDATA[1]]></Rows>
+      <DefaultValue><![CDATA[]]></DefaultValue>
+		<ControlType><![CDATA[Urls]]></ControlType>
+		<Direction><![CDATA[Vertical]]></Direction>
+		<ListContent><![CDATA[U,F]]></ListContent>
+      <Description><![CDATA[E.g. "http://www.dnngo.net/return.png"]]></Description>
+      <Required><![CDATA[False]]></Required>
+      <Verification><![CDATA[url]]></Verification>
+    </Setting>
+     
+    
+    
+    
+    
+  </EffectSettings>
+</DNNGo_PowerForms>
+
+
+

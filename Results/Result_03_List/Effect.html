@@ -1,0 +1,117 @@
+﻿<div class="$ThemeName" >
+    <div class="result_form">
+
+     #if($DataItem.ID>0)
+        <h1>${xf.ViewResultSetting("resultitle","Email Sent Successfully.")}</h1>
+        <p>${xf.ViewResultSetting("resultcontent","Thank you, your message has been submitted to us.")}</p>
+      #end
+        <p class="form_submit">${xf.ViewReturnButton("btn")}</p>
+     
+      #if($ResultList.Count > 0)
+            
+               <div class="submit_list_title">
+                <table cellpadding="3" cellspacing="3" border="0" width="100%">
+                    <tr>
+                        <td>
+                        </td>
+                        <td>
+                            <div style="float: right;">
+                                <label for="CheckboxExpandAll">${xf.ViewResourceText("ExpandAll","Expand All")}</label>  <input name='CheckboxExpandAll'
+                                        id='CheckboxExpandAll' type='checkbox' value='0' /></div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+
+            #foreach($ResultItem in $ResultList)
+              <div>
+             <div class="submit_list_title">
+    	        <table cellpadding="3" cellspacing="3" border="0" width="100%">
+        	        <tbody>
+            	        <tr>
+                	        <td width="180"><label><span>Time</span></label>: $ResultItem.LastTime</td>
+                            <td width="150"><label><span>IP</span></label>:  $ResultItem.LastIP </td>
+                            <td width="200"><label><span>UserName</span></label>: $ResultItem.UserName</td>
+                            <td><label><span>Email</span></label>: $ResultItem.Email</td>
+                            <td><span class="max_icon"></span></td>
+                        </tr>
+                     </tbody>
+                 </table>
+	        </div>
+            <div class="submit_list_content"  style="display: none;">
+    	        <table class="table table-bordered table-striped" cellspacing="0" cellpadding="0" border="0" style="width:100%;border-collapse:collapse;">
+                    <tbody>
+                          <tr>
+                            <th scope="col" style="width:80px;">Name</th>
+    
+                            <th scope="col">Content</th>
+                          </tr>
+                        #set($ResultContentList = $xf.Conversion($ResultItem))
+                         #if($ResultContentList.Count > 0)
+                            #foreach($ResultContentItem in $ResultContentList)
+                                 #if($velocityCount%2 == 0)
+                                    <tr class="td_row">
+                                        <td>$ResultContentItem.FieldAlias</td>  
+                                        <td>${xf.ViewContentValue($ResultContentItem)}</td>
+                                    </tr>
+                                #else
+                                    <tr class="alternating_row">
+                                        <td>$ResultContentItem.FieldAlias</td>
+                                        <td>${xf.ViewContentValue($ResultContentItem)}</td>
+                                    </tr>
+
+                                #end
+                            #end
+                        #end
+                    </tbody>
+                </table>                    
+            </div>
+               </div>
+            #end
+            <div class="article_page">
+						 ${Pager}
+			</div>     
+        #end
+     
+    </div>
+</div>
+</div>
+
+
+
+<script type="text/javascript">
+
+    jQuery(function (q) {
+        q("span[class*='icon']").each(function (i, n) {
+            q(this).click(function () {
+                if (q(this).attr("class") == "max_icon")
+                    q(this).attr("class", "min_icon");
+                else
+                    q(this).attr("class", "max_icon");
+
+                q(this).parent().parent().parent().parent().parent().parent().find("div[class='submit_list_content']").toggle(50);
+            });
+        });
+
+        q("#CheckboxExpandAll").click(function () {
+            var checked = q(this).attr("checked") == "checked";
+            q("span[class*='icon']").each(function (i, n) {
+                q(this).attr("class", checked ? "min_icon" : "max_icon");
+            });
+            q("div[class='submit_list_content']").each(function (i, n) {
+                if (checked)
+                    q(this).show();
+                else
+                    q(this).hide();
+            });
+        });
+    });
+
+
+ 
+</script>
+
+
+
+

@@ -1,0 +1,54 @@
+﻿<div class="$ThemeName" >
+    <div class="result_form">
+        <h1>${xf.ViewResultSetting("resultitle","Email Sent Successfully.")}</h1>
+        <p>${xf.ViewResultSetting("resultcontent","Thank you, your message has been submitted to us.")}</p>
+        <p class="form_submit">${xf.ViewReturnButton("btn")}</p>
+
+
+
+        <div class="form_result">
+            <table class="table table-bordered table-striped" cellspacing="0" cellpadding="0" border="0" style="width:100%;border-collapse:collapse;">
+                <tbody>
+                    <tr>
+                        <th scope="col" style="width:80px;">Name</th>
+    
+                        <th scope="col">Content</th>
+                    </tr>
+                     #if($ContentList.Count > 0)
+                          #foreach($ContentItem in $ContentList)
+                            #if($velocityCount%2 == 0)
+                                <tr class="td_row">
+                                    <td>$ContentItem.FieldAlias</td>  
+                                    <td>${xf.ViewContentValue($ContentItem)}</td>
+                                </tr>
+                            #else
+                                <tr class="alternating_row">
+                                    <td>$ContentItem.FieldAlias</td>
+                                    <td>${xf.ViewContentValue($ContentItem)}</td>
+                                </tr>
+
+                            #end
+
+                          #end
+                     #end
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

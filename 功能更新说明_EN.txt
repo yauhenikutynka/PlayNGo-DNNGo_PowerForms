@@ -1,0 +1,167 @@
+﻿version: 07.00.00
+1. Added a drop down control for "Country", whose data is from DNN Lists page.
+2. Added a drop down control for "Region", whose data is from DNN Lists page. Also, it can be associated with drop down control for "Country".
+3. Added "Equals Control" feature, for example, it can verify that two text boxes must have the same content.
+4. Added "reCAPTCHA", refusing robots to submit spam form information.
+5. Removed the original image verification.
+6. Added a switch to determine if an email shows fields.
+7. Added a "Multiple File Upload" control, making multiple-file-loading quite convenient.
+8. Added a “Hide IP Address”switch to determine if the module’s full IP address will be stored.
+9. Fixed the module’s several bugs and optimized how it is operated.
+
+
+
+
+
+
+
+
+
+
+version: 06.02.00
+1.Added the compression feature for reference resource at display interface. After enabling, it will not only reduce the reference times for JS and CSS files, but will also compress the file size.
+2.Added version 2 google recaptcha. It will block spam info effectively after enabling it.
+3.Removed the original image recaptcha.
+4.Changed all the form effects, and optimized appearance of the page after google recaptcha is enabled.
+5.Changed some JS and CSS, and optimized the compatibility after resource compression is enabled.
+
+
+
+
+version: 06.00.00
+1. Added the multi-language support for date control.
+2. Added the feature of hiding IP address, you can enable it in settings.
+3. Added the role name Token in email template.
+4. Added the confirmation support for control input, for example, values of the two text boxes must be the same.
+5. Optimized the effects of several forms.
+
+
+version: 05.09.00
+1. Added the feature of clearing the submission histroy records regularly.
+2. Added the button of clearing all submission histroy records.
+3. Added the ReplyTo feature in email sent by the submission users.
+4. Compatible with more circumstance of email-sending.
+
+
+
+
+version: 05.08.00
+1.Fixed some bugs that DNN is not able to store parameter settings due to some long parameter names.
+2.Added and deleted some part of effects, which will not affect the previous version.
+3.Optimized CAPTCHA filed by adding label and prompts.
+4.Optimized fields by increasing the length, allowing to place multiple fields in one line at the same time.
+5.Optimized the loading speed and stability of the module.
+
+
+
+version: 05.05.00
+1.Newly added several export formats of historical records, such as csv,doc,html,xml,txt.
+2.Fixed the bug of  mail content being blank at  some certain circumstances.
+3.Fixed the bug of field order being disloated  at  some certain circumstances.
+
+
+
+
+version: 05.04.00
+1. Newly added Excel feature of historical exports, replacing original csv export format.
+2. Modified some form effects to make it responsive.
+3. Fixed the bug of some date format causing module errors.
+4. Optimized the functioning efficiency of some features.
+
+
+
+
+
+
+
+
+version: 05.01.00
+1.Added dynamic option controls(color selector. urls selector and icon selector)
+2.Optimized display way of dynamic option controls, making UI more beautiful.
+3.Added permission setting feature for custom fields.
+4.Added start and end time limitation feature of custom fields.
+5.Added media library feature, making it easy to select uploaded images and files with urls selector.
+6.Added option for each effect, making setting features of each effect more powerful.
+7.Fixed the issue of some settings losing because of copying module and other pages under some DNN versions.
+8.Fixed the issue of not successfully obtaining table prefix names through DNN API in some special case.
+9.Fixed the issue of unrecognizable date because of authorization obtaining in some certain date formats.
+10.Unlocked the limitation of non-admin permission being able to see just a few pages.
+11.Removed permission setting function in module General Settings page, and got it to manage all in settings that come with the module.
+
+
+
+
+
+
+
+version: 05.00.00
+1.Newly added feature: Sender of admin reminder email could be submit user.
+2.Added the option of whether to display reset button or not.
+3.Fixed the bug of module license error at some circumstances.
+4.Fixed the bug of some date format causing module error.
+5.Fixed the bug of management list header being not able to sort.
+6.Added multi-language(30+) support for verification prompt.
+
+
+
+
+
+
+version: 04.05.00
+1.Fixed the BUG of reset button being not able to reset the validation prompt.
+2.Changed the default settings of email sending to enable sending email.
+3.Changed the default admin email of the email sending.
+
+
+
+
+
+version: 04.02.00
+1.Added the feature of exporting  records regularly and sending to designated email.
+2.Fixed the bug that some emails can not be sent successfully at some circumstances.
+
+
+
+
+
+version: 04.01.00
+1.Changed the Effect_04_FancyBox to be displayed in iFrame form.
+2.Changed the Effect_05_HoverFancyBox to be displayed in iFrame form.
+3.Changed the Effect_08_ExternalFancyBox to be displayed in iFrame form.
+4.Newly added HTML control,you can display custom contents through this control.
+5.Fixed the issue that the type of some data fields being unreasonable.
+
+
+
+
+version: 04.00.00
+1.Re-design the framework of data management interface, independent of DNN framework and has a faster running speed.
+2.Support responsiveness fully, support various mobile devices in different resolutions.
+3.Nice and elegant interface, make you feel like working with wordpress.
+4.Fix many BUGs under V3.0 below, with more stability.
+
+
+version: 03.01.00
+1. Add the feature of obtaining Tracking Info when submitting, which will display in the submitted history and email notification.
+2. Optimize the template of notification email.
+
+
+version: 03.00.0
+1. Add the push data feature, which allows you to submit form data to custom pages. Optimize the option of push data setting interface with rich custom options.
+2. Add the feature to export all sumitted history records at one time.
+
+
+
+version: 02.07.03
+1.Add Hidden Field form validation to avoid machine submission and repeated submission.
+
+version: 02.07.02
+1.Fix the issue that email notification can’ t be sent correctly under certain runtime cucumstances.
+2.Optimize the stability of email notification.
+3.Optimize the compatibility of data components.
+
+
+version: 02.06.03
+1.Add two sets of form page templates.
+2.Add two sets of result page templates.
+3.Optimize the paramter setting options of the template.

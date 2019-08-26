@@ -1,0 +1,32 @@
+﻿/************************************************************/
+/*****              SqlDataProvider                     *****/
+/*****                                                  *****/
+/*****                                                  *****/
+/***** Note: To manually execute this script you must   *****/
+/*****       perform a search and replace operation     *****/
+/*****       for {databaseOwner} and {objectQualifier}  *****/
+/*****                                                  *****/
+/************************************************************/
+
+/** ALTER Table **/
+
+ 
+
+
+ /** DNNGo_PowerForms_Field  **/
+if exists (select * from dbo.sysobjects where id = object_id(N'{databaseOwner}[{objectQualifier}DNNGo_PowerForms_Field]') and OBJECTPROPERTY(id, N'IsTable') = 1)
+BEGIN
+	alter table {databaseOwner}[{objectQualifier}DNNGo_PowerForms_Field] alter column DefaultValue ntext
+END
+GO
+
+
+
+ 
+
+/************************************************************/
+/*****              SqlDataProvider                     *****/
+/************************************************************/
+
+
+

@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<DNNGo_PowerForms>
+  <EffectDB>
+    <Name>
+      <![CDATA[Effect_01_Responsivegame]]>
+    </Name>
+    <Description>
+      <![CDATA[]]>
+    </Description>
+    <Version>
+      <![CDATA[01.00.07]]>
+    </Version>
+    <Thumbnails>
+      <![CDATA[preview.jpg]]>
+    </Thumbnails>
+    <EffectScript>
+      <![CDATA[]]>
+    </EffectScript>
+    <GlobalScript>
+      <![CDATA[jquery.inputDefault.js]]>
+    </GlobalScript>
+    <DemoUrl>
+      <![CDATA[http://www.dnngo.net/OurModules/PowerForms/Basic_Normal.aspx]]>
+    </DemoUrl>
+    <Group>
+      <![CDATA[false]]>
+    </Group>
+    <Custom>
+      <![CDATA[false]]>
+    </Custom>
+  </EffectDB>
+</DNNGo_PowerForms>

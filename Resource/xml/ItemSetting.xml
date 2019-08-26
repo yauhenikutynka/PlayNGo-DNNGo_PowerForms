@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<DNNGo_PowerForms>
+	<EffectSettings>
+    <Setting>
+      <Name><![CDATA[MailTemplateDisplay]]></Name>
+      <Alias><![CDATA[Display in e-mail template ]]></Alias>
+      <Width><![CDATA[100]]></Width>
+      <Rows><![CDATA[1]]></Rows>
+      <DefaultValue><![CDATA[true]]></DefaultValue>
+      <ControlType><![CDATA[CheckBox]]></ControlType>
+      <Direction><![CDATA[Vertical]]></Direction>
+      <ListContent><![CDATA[]]></ListContent>
+      <Description><![CDATA[]]></Description>
+      <Required><![CDATA[False]]></Required>
+      <Verification><![CDATA[]]></Verification>
+      <Group><![CDATA[E-mail Template Options]]></Group>
+      <Categories><![CDATA[E-mail Template Options]]></Categories>
+      <Layout><![CDATA[Right]]></Layout>
+    </Setting>
+  </EffectSettings>
+</DNNGo_PowerForms>
+
+
+

@@ -1,0 +1,137 @@
+﻿/************************************************************/
+/*****              SqlDataProvider                     *****/
+/*****                                                  *****/
+/*****                                                  *****/
+/***** Note: To manually execute this script you must   *****/
+/*****       perform a search and replace operation     *****/
+/*****       for {databaseOwner} and {objectQualifier}  *****/
+/*****                                                  *****/
+/************************************************************/
+
+/** Create Table **/
+
+ 
+/** DNNGo_PowerForms_DNNGo_PowerForms_ContentContent  **/
+if not exists (select * from dbo.sysobjects where id = object_id(N'{databaseOwner}[{objectQualifier}DNNGo_PowerForms_Content]') and OBJECTPROPERTY(id, N'IsTable') = 1)
+BEGIN
+	 CREATE TABLE {databaseOwner}[{objectQualifier}DNNGo_PowerForms_Content](
+			[ID] [int] IDENTITY(1,1) NOT NULL,
+			[UserName] [nvarchar](100) NOT NULL,
+			[Email] [nvarchar](256) NOT NULL,
+			[CultureInfo] [nvarchar](50) NOT NULL,
+			[ContentValue] [ntext] NOT NULL,
+			[ModuleId] [int] NOT NULL,
+			[PortalId] [int] NOT NULL,
+			[Status] [tinyint] NOT NULL,
+			[LastUser] [int] NOT NULL,
+			[LastIP] [nvarchar](50) NOT NULL,
+			[LastTime] [datetime] NOT NULL,
+		 CONSTRAINT [PK_{objectQualifier}DNNGo_PowerForms_Content] PRIMARY KEY CLUSTERED 
+		(
+			[ID] ASC
+		)
+		WITH (STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF)
+	)
+	  
+END
+GO
+
+
+ /** DNNGo_PowerForms_Field  **/
+if not exists (select * from dbo.sysobjects where id = object_id(N'{databaseOwner}[{objectQualifier}DNNGo_PowerForms_Field]') and OBJECTPROPERTY(id, N'IsTable') = 1)
+BEGIN
+	 CREATE TABLE {databaseOwner}[{objectQualifier}DNNGo_PowerForms_Field](
+			[ID] [int] IDENTITY(1,1) NOT NULL,
+			[GroupID] [int] NOT NULL,
+			[Name] [nvarchar](100) NOT NULL,
+			[Alias] [nvarchar](100) NOT NULL,
+			[ToolTip] [nvarchar](256) NULL,
+			[Description] [nvarchar](512) NULL,
+			[DefaultValue] [nvarchar](512) NULL,
+			[FieldType] [tinyint] NOT NULL,
+			[Direction] [tinyint] NOT NULL,
+			[Width] [int] NOT NULL,
+			[Rows] [int] NOT NULL,
+			[FiledList] [ntext] NULL,
+			[Required] [tinyint] NOT NULL,
+			[Verification] [tinyint] NOT NULL,
+			[Sort] [int] NOT NULL,
+			[ModuleId] [int] NOT NULL,
+			[PortalId] [int] NOT NULL,
+			[Status] [tinyint] NOT NULL,
+			[LastUser] [int] NOT NULL,
+			[LastIP] [nvarchar](50) NOT NULL,
+			[LastTime] [datetime] NOT NULL,
+		 CONSTRAINT [PK_{objectQualifier}DNNGo_PowerForms_Field] PRIMARY KEY CLUSTERED 
+		(
+			[ID] ASC
+		)
+		WITH (STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF)
+	)
+	  
+END
+GO
+
+
+
+/** DNNGo_PowerForms_Group  **/
+if not exists (select * from dbo.sysobjects where id = object_id(N'{databaseOwner}[{objectQualifier}DNNGo_PowerForms_Group]') and OBJECTPROPERTY(id, N'IsTable') = 1)
+BEGIN
+	 CREATE TABLE {databaseOwner}[{objectQualifier}DNNGo_PowerForms_Group](
+		[ID] [int] IDENTITY(1,1) NOT NULL,
+		[Name] [nvarchar](128) NOT NULL,
+		[Description] [nvarchar](512) NULL,
+		[Sort] [int] NOT NULL,
+		[ModuleId] [int] NOT NULL,
+		[PortalId] [int] NOT NULL,
+		[Status] [tinyint] NOT NULL,
+		[LastUser] [int] NOT NULL,
+		[LastIP] [nvarchar](50) NOT NULL,
+		[LastTime] [datetime] NOT NULL,
+	 CONSTRAINT [PK_{objectQualifier}DNNGo_PowerForms_Group] PRIMARY KEY CLUSTERED 
+	(
+		[ID] ASC
+		)
+		WITH (STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF)
+	)
+	  
+END
+GO
+
+
+
+
+/** DNNGo_PowerForms_Template  **/
+if not exists (select * from dbo.sysobjects where id = object_id(N'{databaseOwner}[{objectQualifier}DNNGo_PowerForms_Template]') and OBJECTPROPERTY(id, N'IsTable') = 1)
+BEGIN
+	 CREATE TABLE {databaseOwner}[{objectQualifier}DNNGo_PowerForms_Template](
+		[ID] [int] IDENTITY(1,1) NOT NULL,
+		[ReceiversSubject] [nvarchar](512) NOT NULL,
+		[ReceiversTemplate] [ntext] NOT NULL,
+		[ReplySubject] [nvarchar](512) NOT NULL,
+		[ReplyTemplate] [ntext] NOT NULL,
+		[ModuleId] [int] NOT NULL,
+		[LastUser] [int] NOT NULL,
+		[LastIP] [nvarchar](50) NOT NULL,
+		[LastTime] [datetime] NOT NULL,
+	 CONSTRAINT [PK_{objectQualifier}DNNGo_PowerForms_Template] PRIMARY KEY CLUSTERED 
+	(
+		[ID] ASC
+		)
+		WITH (STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF)
+	)
+	  
+END
+GO
+
+
+
+
+ 
+
+/************************************************************/
+/*****              SqlDataProvider                     *****/
+/************************************************************/
+
+
+

@@ -1,0 +1,37 @@
+﻿<div class="$ThemeName" style="width:${xf.ViewXmlSetting("width","100%")};">
+        #if($FieldList.Count > 0)
+			<div class="form_row">
+				<table cellpadding="0" cellspacing="0" border="0" class="form_table">
+                    
+                   {&FieldList&}
+
+                   #if($Module.Settings_Recaptcha_Enable)
+                       <tr>
+						    <td class="form_label">Captcha:</td>
+						    <td class="form_input form_captcha">
+                                ${xf.ViewCaptcha()}
+                            </td>
+						    <td class="captcha_img">
+								<img id="png_captcha${ModuleID}" class="png_captcha" src="" style="display:none" />
+							</td>
+					    </tr>
+                        #if($captchaErrorMessage != '')
+                        <tr>
+                            <td class="form_label"></td>
+                            <td class="form_input">$captchaErrorMessage</td>
+                            <td class="form_required"></td>
+                        </tr>
+                        #end
+                   #end
+
+				</table>
+			</div>			
+        #end
+        <div class="form_submit"> ${xf.ViewButton("btn submit_but")}  <input type="reset" value="${xf.ViewResourceText("Reset","Reset")}" class="btn reset_but" /></div>
+</div>
+<style type="text/css">
+	#form_div_${ModuleID} .actionMenu{ display:none;}
+</style> 
+ 
+
+

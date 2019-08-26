@@ -1,0 +1,15 @@
+﻿                <tr>
+	                <td style="width:${xf.ViewXmlSetting("labelwidth","150")}px;" class="form_label" align="${xf.ViewXmlSetting("labeltextalign","left")}">${xf.ViewLable($FieldList,"{&FieldName&}",":")}</td>
+	                <td class="form_input">
+                    ${xf.ViewControl($FieldList,"{&FieldName&}")}
+
+                    #if( ${xf.ViewXmlSetting("DisplayTooltip","true")} == "true")
+                        ${xf.ViewInputDefault($FieldList,"{&FieldName&}")}
+                    #end
+                    </td>
+	                <td class="form_required">
+		                #if(${xf.ViewFieldItem($FieldList,"{&FieldName&}").Required} == 1)
+                            <span class="form_required">*</span>
+                        #end 
+	                </td>
+                </tr>

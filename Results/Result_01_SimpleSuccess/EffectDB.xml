@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<DNNGo_PowerForms>
+  <EffectDB>
+    <Name>
+      <![CDATA[Result_01_SimpleSuccess]]>
+    </Name>
+    <Description>
+      <![CDATA[]]>
+    </Description>
+    <Version>
+      <![CDATA[02.01.00]]>
+    </Version>
+    <Thumbnails>
+      <![CDATA[http://www.dnngo.net/DesktopModules/DNNGo_PowerForms/Results/Result_01_SimpleSuccess/preview.jpg]]>
+    </Thumbnails>
+    <EffectScript>
+      <![CDATA[]]>
+    </EffectScript>
+    <GlobalScript>
+      <![CDATA[]]>
+    </GlobalScript>
+    <DemoUrl>
+      <![CDATA[http://www.dnngo.net/OurModules/PowerForms/Basic_Normal.aspx]]>
+    </DemoUrl>
+    <Group>
+      <![CDATA[false]]>
+    </Group>
+  </EffectDB>
+</DNNGo_PowerForms>
